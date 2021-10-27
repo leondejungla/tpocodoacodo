@@ -1,0 +1,85 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    background-image: url(../img/ladrillo.jpg);
+    background-size: cover;
+    padding: 1rem;
+}
+
+.container h3 {
+    text-align: center;
+    margin: auto;
+    color: whitesmoke;
+    background-color: black;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-weight: bolder;
+    font-size: 1.6rem;
+}
+h3:hover{
+    border: 7px solid goldenrod;
+
+}
+
+.flexbox {
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    align-items: center;
+    margin-bottom: 1rem;
+    align-items: center;
+
+}
+
+.sucursal {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.6rem;
+    text-align: center;
+    margin: 1.7rem;
+    color: whitesmoke;
+    background-color: black;
+
+
+}
+.sucursal:hover {
+    border: 7px solid goldenrod;
+}
+
+iframe{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height:400px;
+    margin: 1rem;
+    padding: 1rem;
+}
+
+@media screen and (max-width: 800px) {
+.flexbox {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-bottom: 2rem;
+    flex-direction: column;
+    }
+}
+@media only screen and (max-width:500px) {
+    .flexbox {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        
+    }
+}
+
+.footer {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    font-style: italic white;
+    color: white;
+    padding: 1vw;
+    text-align: right;
+  }

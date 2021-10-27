@@ -1,0 +1,221 @@
+nav {
+    background: black !important;
+    padding: 5px 20px !important;
+    position:sticky !important;
+    top: 0 !important;
+    display: flex !important;
+    justify-content:flex-end !important;
+    z-index: 9999999 !important;
+  }
+  ul {
+    list-style-type: none !important;
+  }
+  a {
+    color: white !important;
+    text-decoration: none !important;
+  }
+  a:hover {
+    text-decoration: underline !important;
+  }
+  .logo a:hover {
+    text-decoration: none !important;
+  }
+  .menu li {
+    font-size: 16px !important;
+    padding: 15px 5px !important;
+    white-space: nowrap !important;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px !important;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid !important;
+  }
+  /* HEADER */
+  header{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content:left !important;
+    align-items: center !important;
+    background-color: #ffffe0 !important;
+    padding: 10px !important;
+    z-index: 9999999 !important;
+
+  }
+
+  .header-logo{
+    width: 50% !important;
+  }
+  .header-logo img{
+      width: 20% !important;
+      height: 20% !important;
+      display: flex !important;
+      justify-content: safe !important;
+  }
+
+  .ul-redes{
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    gap: 10px !important; 
+}
+
+/* Mobile menu */
+.menu {
+    display: flex !important;
+    flex-wrap: wrap !important;
+    justify-content: space-between !important;
+    align-items: center !important;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+
+  main{
+      min-height: 900px;
+  }
+  /* Tablet menu */
+  @media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+    }
+    .button.secondary a {
+      background: transparent;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+    }
+    .button.secondary a:hover {
+      color: #ddd;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 900px) {
+    .item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+    }
+    .button {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .grid {
+      display: flex;
+      padding: 0;
+      flex-direction: column;
+    }
+  }
+
+
+#catalogo .col-lg-4{
+    margin: 0 ;
+    padding: 25px;
+}
+
+#catalogo img{
+    width: 100%;
+    height: 300px;
+}
+
+#catalogo img:hover{
+    border: 5px solid goldenrod;
+}
+.carousel-item{
+    position: relative;
+    display: none;
+    float: left;
+    width: 100%;
+    margin-right: -100%;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    transition: -webkit-transform .6s ease-in-out;
+    transition: transform .6s ease-in-out;
+    transition: transform .6s ease-in-out,-webkit-transform .6s ease-in-out;
+}
+.carousel{
+    position:relative;
+    max-width: 100%;
+    max-height: 50%;
+}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {
+    width: 100%;
+}
+.carousel img{
+    height: 50%;
+    min-width: 100%;
+    object-fit: cover;
+    filter: brightness(80%);
+}
+.d-block{
+    display: block !important;
+}
+img{
+vertical-align: middle;
+border-style: none;
+}
+.footer {
+    display: flex;
+    justify-content: end;
+    background-color: black;
+    font-style: italic white;
+    color: white;
+    padding: 1vw;
+    text-align: right;
+  }

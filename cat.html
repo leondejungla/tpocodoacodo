@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackHouse Inmobiliaria</title>
+    <link rel="stylesheet" href="./css/cat.css">
+    <link rel="icon" href="./img/house-logo-clipart-6.ico">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="./img/house-logo-clipart-6.png" alt="logo">
+            <h3>BlackHouse Inmobiliaria</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="item active"><a href="index.html">Inicio</a></li>
+            <li class="item active"><a href="cat.html">Catálogo</a></li>
+            <li class="item active"><a href="iframe.html">Sucursales</a></li>
+            <li class="item active"><a href="form.html">Contacto</a></li>
+            <li class="toggle" onclick="toggle(this);"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="./img/carrousel1.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrousel2.jpg" class="d-block w-100" alt="">
+          </div>
+          <div class="carousel-item">
+            <img src="./img/carrousel3.jpg" class="d-block w-100" alt="">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    <section id="catalogo" class="container">
+        <div class="text-center pt-5">
+            <h1>CATÁLOGO BLACKHOUSE</h1>
+            <br><br>
+            <h5>Nuestras Propiedades se destacan por su elegante diseño arquitectónico, su exquisito gusto por el comfort, y su inigualable precio de mercado.</h5>
+        </div>
+          <br><br>
+        <div class="row">
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion1.jpg" alt="Catálogo">
+                <strong>Le Manoir Dóre U$S 900.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion2.jpg" alt="">
+                <strong>LightHouse Beach U$S 750.000 </strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion3.jpg" alt="">
+                <strong>Island House U$S 600.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion4.jpg" alt="">
+                <strong>Petit Patate U$S 700.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion5.jpg" alt="">
+                <strong>SoulofDreams U$S 580.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion6.jpg" alt="">
+                <strong>Water of Wishes U$S 850.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion7.jpg" alt="">
+                <strong>Green Winter U$S 720.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion8.jpg" alt="">
+                <strong>The Angels U$S 1.000.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/Mansion9.jpg" alt="">
+                <strong>Lucky Ones U$S 550.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/mansion10.jpg" alt="">
+                <strong>Palace of Gold U$S 1.220.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/mansion11.jpg" alt="">
+                <strong>Real State U$S 1.000.000</strong>
+            </div>
+            <div class="col-lg-3 col-md-6 col-sm-12">
+                <img src="./img/Propiedades/mansion12.jpg" alt="">
+                <strong>Poison Blue U$S 900.000</strong>
+            </div>
+        </div>
+    </section>
+    
+    <footer class="footer">BLACKHOUSE 🏡</footer>
+    
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    
+</body>
+</html>

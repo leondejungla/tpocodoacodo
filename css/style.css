@@ -1,0 +1,238 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body {
+    font-family: sans-serif;
+    background: #ffe5f3;
+  }
+  nav {
+    background: black;
+    padding: 5px 20px;
+    position:sticky;
+    top: 0;
+    display: flex;
+    justify-content:flex-end;
+    z-index: 9999999;
+  }
+  ul {
+    list-style-type: none;
+  }
+  a {
+    color: white;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  .logo a:hover {
+    text-decoration: none;
+  }
+  .menu li {
+    font-size: 16px;
+    padding: 15px 5px;
+    white-space: nowrap;
+  }
+  .logo a,
+  .toggle a {
+    font-size: 20px;
+  }
+  .button.secondary {
+    border-bottom: 1px #444 solid;
+  }
+  /* HEADER */
+  header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:left;
+    align-items: center;
+    background-color: #ffffe0;
+    padding: 10px;
+    z-index: 9999999;
+
+  }
+
+  .header-logo{
+    width: 50%;
+  }
+  .header-logo img{
+      width: 20%;
+      height: 20%;
+      display: flex;
+      justify-content: safe;
+  }
+
+  .ul-redes{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+  }
+
+/* BODY */
+.parallax {
+    background-image: url(../img/index.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clear: both;
+}
+.center {
+    position: absolute;
+    top: 50%;
+    width: 95vw;
+    margin: 0 auto;
+    text-align: center;
+    color:skyblue;
+    font-size: 2em;
+    font-family: 'Italianno', cursive;
+    padding: 1rem;
+    background: rgba(0, 0, 0, 0.75);
+    -webkit-box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 43px 39px rgba(0,0,0,0.75),
+}
+.centro {
+  font-size: 1.5em;
+  color: goldenrod;
+}
+.grid {
+  display: flex;
+  width: 90vw;
+  margin: 5rem auto;
+}
+
+.col {
+  width: 90%;
+  min-height: 260px;
+  background-image: url(../img/carousel3.jpg);
+  display: -moz-box;
+  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  font-size:large;
+  box-decoration-break: slice;
+  margin: 0.5rem;
+}
+.grid .col:hover{
+  border: 5px solid goldenrod;
+
+}
+
+.footer {
+  display: flex;
+  justify-content: end;
+  background-color: black;
+  font-style: italic white;
+  color: white;
+  padding: 1vw;
+  text-align: right;
+}
+
+
+
+
+  /* Mobile menu */
+  .menu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .toggle {
+    order: 1;
+  }
+  .item.button {
+    order: 2;
+  }
+  .item {
+    width: 100%;
+    text-align: center;
+    order: 3;
+    display: none;
+  }
+  .item.active {
+    display: block;
+  }
+
+  main{
+      min-height: 900px;
+  }
+  /* Tablet menu */
+  @media all and (min-width: 600px) {
+    .menu {
+      justify-content: center;
+    }
+    .logo {
+      flex: 1;
+    }
+    .toggle {
+      flex: 1;
+      text-align: right;
+    }
+    .item.button {
+      width: auto;
+      order: 1;
+      display: block;
+    }
+    .toggle {
+      order: 2;
+    }
+    .button.secondary {
+      border: 0;
+    }
+    .button a {
+      padding: 7.5px 15px;
+      background: teal;
+      border: 1px #006d6d solid;
+    }
+    .button.secondary a {
+      background: transparent;
+    }
+    .button a:hover {
+      text-decoration: none;
+    }
+    .button:not(.secondary) a:hover {
+      background: #006d6d;
+      border-color: #005959;
+    }
+    .button.secondary a:hover {
+      color: #ddd;
+    }
+  }
+  /* Desktop menu */
+  @media all and (min-width: 900px) {
+    .item {
+      display: block;
+      width: auto;
+    }
+    .toggle {
+      display: none;
+    }
+    .logo {
+      order: 0;
+    }
+    .item {
+      order: 1;
+    }
+    .button {
+      order: 2;
+    }
+    .menu li {
+      padding: 15px 10px;
+    }
+    .menu li.button {
+      padding-right: 0;
+    }
+  }
+
+  @media screen and (max-width: 800px) {
+    .grid {
+      display: flex;
+      padding: 0;
+      flex-direction: column;
+    }
+  }

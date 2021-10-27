@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlackHouse Inmobiliaria</title>
+    <link rel="stylesheet" href="./css/form.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <link rel="icon" href="./img/house-logo-clipart-6.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Italianno&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-logo">
+            <img src="./img/house-logo-clipart-6.png" alt="logo">
+            <h3>BlackHouse Inmobiliaria</h3>
+        </div>
+    </header>
+    <nav>
+        <ul class="menu">
+            <li class="item active"><a href="index.html">Inicio</a></li>
+            <li class="item active"><a href="cat.html">Catálogo</a></li>
+            <li class="item active"><a href="iframe.html">Sucursales</a></li>
+            <li class="item active"><a href="form.html">Contacto</a></li>
+            <li class="toggle" onclick="toggle(this);"><a href="#"><i class="fas fa-bars"></i></a></li>
+        </ul>
+    </nav>
+    <main class="container">
+        <div class="consultas">
+            
+            
+            <form action="" method="POST" id="formulario" name="formulario" onsubmit="enviarForm(event)">
+                <br><br>
+                <label for="name">Nombre:</label>
+                
+                <input type="text" class="input" id="name" placeholder="Ej.Juan" >
+                <br><br>
+                <label for="apellido">Apellidos:</label>
+                <input type="text" class="input" id="apellido" placeholder="Ej.Perez" >
+                <br><br>
+                <label for="email">Email:</label>
+                <input type="email" class="input" id="mail" placeholder="hola@hotmail.com" >
+                <br><br>
+                <label for="asunto">Consulta:</label>
+                <textarea name="mensaje" class="input" id="mensaje" cols="30" rows="10" placeholder="Dejanos tu consulta..."></textarea>
+                <br></br>
+                <input class="btn" type="submit" value="Enviar">
+            </form>
+        </div>
+    </main>
+    <footer class="footer">BLACKHOUSE 🏡</footer>
+    <script src="./js/form.js"></script>
+</body>
+</html>
