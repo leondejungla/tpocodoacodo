@@ -18,10 +18,7 @@
     font-weight: bolder;
     font-size: 1.6rem;
 }
-h3:hover{
-    border: 7px solid goldenrod;
 
-}
 
 .flexbox {
     display: flex;
@@ -43,9 +40,7 @@ h3:hover{
 
 
 }
-.sucursal:hover {
-    border: 7px solid goldenrod;
-}
+
 
 iframe{
     display: flex;
